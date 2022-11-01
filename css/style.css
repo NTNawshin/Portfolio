@@ -1,0 +1,162 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+/***** NAVBAR *****/
+
+.navbar {
+    background-color: #583d54;
+    border-radius: 0;
+}
+
+/* Navbar title */
+.navbar-default .navbar-brand {
+    color: #a4d0e0;
+    font-size: px;
+    font-weight: bold;
+    font-family: Tahoma;
+}
+
+/* Navbar hover effects */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Navbar links */
+.navbar-default .navbar-nav > li > a {
+    color: #a4d0e0 ;
+    font-size: 16px;
+    padding: 10px;
+    font-family: Tahoma;
+}
+
+/* Navbar collapsed styles */
+.navbar-toggler {
+    color: #264348;
+    border-color: #264348;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid;
+    fill: #264348;
+    font-size: 16px;
+    position: relative;
+    margin-right: 10px;
+    font-family: Tahoma;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    background-color: #5b3256;
+    color: #242424;
+    fill: #242424;
+    border-color: #fff;
+
+}
+
+/*** JUMBOTRON ***/
+
+.jumbotron {
+    background-image: url("../assets/contour-lines.png");
+    text-align: center;
+    color: #fff;
+    padding: 3%;
+    border-radius: 0px;
+}
+
+.mapbanner {
+    background-image: url("../assets/banners/maps.png");
+}
+
+.mapheading{
+    height: 500px;
+    width: 500px;
+    object-fit: none;
+}
+
+.jumbotron h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.img-responsive{
+    width:100%;
+}
+
+/*** CARD ***/
+
+.card {
+    background-color: #fff;
+    border-color: #cccccc;
+    border-width: 1px;
+    width: 100%;
+}
+
+.card:hover {
+    border-color: #5b3256;
+}
+
+/*** Basic Text Styles ***/
+
+#about-world {
+    max-height: 200px;
+}
+
+.resume h3 {
+    font-weight: bold;
+}
+
+
+hr {
+    border-color: white;
+    border-width: 2px;
+}
+
+h1,h2,h3, h4{
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px ;
+}
+a:hover {
+    color: #5b3256;
+}
+
+.container{
+    padding:25px 0;
+}
+
+body {
+
+    font-family: 'Georgia', serif;
+    background-color: #f7f1f6;
+    color: #242424;
+}
+
+.rpoints{
+    color: #5b3256;
+}
+
+.rmain{
+    padding-top: 5px;
+}
+
+.photo{
+     padding-top: 10px;
+}
+
+.card-text {
+    color: rgb(102, 151, 163) ;
+}
+
+li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px ;
+}
+
+i{
+    padding-left: 20px;
+}
