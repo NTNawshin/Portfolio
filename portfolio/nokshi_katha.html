@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scrollmap Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    
+    <link rel="stylesheet" href="../lib/scrollmap.css">
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/noksi_katha_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Niconne&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <div class="content">
+        <!--title block, background image is title image-->
+        <div class="row" style="background-image:url(../assets/img/portfolio/nokshi_katha/title2.png)">
+            <div class="center title">
+                <!--title text-->
+                <h1>Nokshi Katha</h1>
+                <!--subtitle or author-->
+                <p class="author"><b>Nuzhat Tabassum Nawshin</b></p>
+            </div>
+        </div>
+        <!--text block-->
+        <div class="row">
+            <div class="center-wide">
+                <p>
+                    I made this map for one of the labs of my Graphic Design in Cartography course at UW-Madison which demanded that we 
+                    make a slippy map inspired by a specific art/aesthetic style. I made this “Nokshi Katha” map (named after the 
+                    style itself) in an effort to represent one aspect of my culture's aesthetic side. 
+                    </p>
+                <p>
+                    Nokshi Katha (in bengali) is a centuries-old art tradition of making embroidered quilts that is hand-stitched by the women of rural 
+                    Bengali communities of Bangladesh and the Indian state of West Bengal, Tripura and Assam.               
+                </p>
+            </div>
+        </div>
+        <!--image block-->
+        <div class="row">
+            <div class="center-wide">
+                <p>Nokshi Katha usually refers to cloths embellished with detailed embroidery works that are typically used as used as winter blankets. The word Katha means rags or 
+                    old cloths while Nokshi originates from the Bengali work "noksha" which refers to artistic patterns.</p>
+            </div>
+            <img class="cover" src="../assets/img/portfolio/nokshi_katha/board.png">
+        </div>
+        <!--bootstrap carousel, centered-->
+        <div class="row">
+            <div class="center-wide">
+                <p>As the map is zoomed in the background color gradually changes from dark to light beige so that the other features rise to figure. 
+                    Zooming in also makes the cloth-like texture of the background more prnounced.</p>
+                <!--slideshow of images, also known as a carousel-->
+                <!--remove "carousel-dark" if you want a lighter version of the carousel-->
+                <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <!--indicator buttons at the bottom of the carousel that show the total number of slides-->
+                    <div class="carousel-indicators">
+                        <!--there should be as many of these buttons as there are slides in your carousel-->
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <!--images in the carousel-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/img/portfolio/nokshi_katha/slide1.png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/portfolio/nokshi_katha/slide2.png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/portfolio/nokshi_katha/slide3.png" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/portfolio/nokshi_katha/slide4.png" class="w-100" alt="...">
+                        </div>
+                    </div>
+                    <!--previous/next buttons that allow users to click from one slide to the next-->
+                    <button id="prev-button" class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button id="next-button" class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--background images with text scrolling over them-->
+        <div class="scroll-container">    
+            <!--background images-->
+            <div class="background-item">
+                <!--data-slide property used to specify when the background should first-->
+                <img src="../assets/img/portfolio/nokshi_katha/background.png" data-slide="0" class="fill vert-center">
+                <img src="../assets/img/portfolio/nokshi_katha/background2.png" data-slide="1" class="fill vert-center hidden">
+                <img src="../assets/img/portfolio/nokshi_katha/background3.png" data-slide="2" class="fill vert-center hidden">
+                <img src="../assets/img/portfolio/nokshi_katha/background4.png" data-slide="3" class="fill vert-center hidden">
+            </div>
+            <!--foreground text blocks-->
+            <div class="foreground-item no-event">
+                <div class="row">
+                    <div class="center background-transparent rounded">
+                        <p class="no-margin">We start with Dhaka, capital of Bangladesh located approximately at the center of the country. It has the most congested residential areas.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left background-transparent rounded">
+                        <p class="no-margin">Looking at the forested south-west part of the country which is also the largest mangrove forest in the world, Sundarban.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" fill center background-transparent rounded">
+                        <p class="no-margin">Bangladesh has a very intricate river system and Meghna is one of the most important among them.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left background-transparent rounded">
+                        <p class="no-margin">The orange cross-stitched texture on the map shows the railway lines. Kamalapur is the central train station of Dhaka. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--side-by-side image and text block-->
+        <div class="row">
+            <div class="left">
+                <p class="vert-center">At the global level, the country name and capital name have the same custom font, Eenvoudige Batik Regular.</p>
+            </div>
+            <div class="right">
+                <img class="fit" src="../assets/img/portfolio/nokshi_katha/font1.png">
+            </div>
+        </div>
+        <!--side-by-side image and text block-->
+        <div class="row">
+            <div class="left">
+                <img class="fit" src="../assets/img/portfolio/nokshi_katha/font2.png">
+            </div>
+            <div class="right">
+                <p class="vert-center">When zoomed in to country level, the name of the divisions/prominent cities changes to Jagged (BRK) Regular font while the rest of the city names use the Bleak Segments (BRK) regular font.</p>
+            </div>
+        </div>
+        <!--side-by-side image and text block-->
+        <div class="row">
+            <div class="center-wide">
+                <p class="vert-center">Bleak Segments (BRK) Regular for is also used for other POIs and urban settlements like area names, airport, universities, hospitals, restaurants, mosques, parks and so on in different colors.</p>
+            </div>
+            <div class="left">
+                <img class="fit vert-center" src="../assets/img/portfolio/nokshi_katha/font3_1.png">
+            </div>
+            <div class="right">
+                <img class="fit vert-center" src="../assets/img/portfolio/nokshi_katha/font3_2.png">
+            </div>
+        </div>
+        <!--side-by-side image and text block-->
+        <div class="row">
+            <div class="center-wide">
+                <p class="vert-center">Embroidery font is used to rivers, lakes and other water features.</p>
+            </div>
+            <div class="left">
+                <img class="fit vert-center" src="../assets/img/portfolio/nokshi_katha/font4_1.png">
+            </div>
+            <div class="right">
+                <img class="fit vert-center" src="../assets/img/portfolio/nokshi_katha/font4_2.png">
+            </div>
+        </div>
+        <!--mapbox iframe-->
+        <div class="row sm-margin">
+            <div class="row">
+                <p class="center">See the full map here</p>             
+                    <iframe class="fit" height="800px" src="https://api.mapbox.com/styles/v1/ntnawshin/clb9tne3i000y15o5rgfu55pv.html?title=view&access_token=pk.eyJ1IjoibnRuYXdzaGluIiwiYSI6ImNsYThjZzB4MjAyZXY0MHBlcHNrZHd6YmUifQ.wrjSJbaNvwf48Hu-xk2vNg&zoomwheel=true&fresh=true#6.31/24.051/90.483" ></iframe>
+                </div>
+        </div>
+        <!--text block-->
+        <div class="row no-margin">
+            <div class="center">
+                <div class="credits">
+                    <hr>
+                    <p style="font-size: 20px;"><b>Credits:</b></p>
+                    <p style="font-size: 20px;">Map created with Mapbox Studio</p>
+                    <p style="font-size: 20px;">Data from openstreetmap</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<script type="text/javascript" src="../lib/scrollmap.js"></script>
+<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+
+</body>
+</html>
