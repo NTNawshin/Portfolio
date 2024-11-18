@@ -157,3 +157,11 @@ li{
 i{
     padding-left: 20px;
 }
+
+.text-center h2 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5b3256;
+    margin-top: 40px;
+}
